@@ -15,7 +15,7 @@ body {
     overflow: hidden;
     margin-top: 0px;
     background-size: cover;
-    background-position: center left;
+    background-position: bottom;
     background-color: darkorchid;
     background-image: url(../res/heading.png);
     color: #fff;
@@ -23,8 +23,14 @@ body {
 }
 
 .heading {
-    margin-left: 45%;
+    overflow: none;
     overflow: hidden;
+    text-align: center;
+}
+
+.heading img {
+    float: left;
+    margin-left: 10px;
 }
 
 .search {
