@@ -11,7 +11,7 @@ body {
     --hoverColor: #0094FF;
 }
 
-#generalHeading {
+.generalHeading {
     overflow: hidden;
     margin-top: 0px;
     background-size: cover;
@@ -78,4 +78,31 @@ body {
 
 .title {
     text-align: center;
+}
+
+.member {
+    transition: all 0.3s;
+    border-radius: 20px;
+    margin: 30px 20px;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    color: white;
+    background-color: dimgray;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    left: 3%;
+}
+
+.member:hover {
+    margin: 20px 75px;
+    width: 450px;
+    height: 450px;
+    margin: 10px;
+}
+
+.member a {
+    color: var(--mainColor);
 }
