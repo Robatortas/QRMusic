@@ -9,6 +9,9 @@ body {
 :root {
     --mainColor: #56B8FF;
     --hoverColor: #0094FF;
+
+    --generalBoxWidth: 400px;
+    --generalBoxHeight: 400px;
 }
 
 .generalHeading {
@@ -86,8 +89,10 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(10px, auto);
-    grid-column-gap: 500px;
+    grid-column-gap: 20%;
     grid-row-gap: 50px;
+
+    text-align: center;
 }
 
 /* #member:hover {
@@ -111,8 +116,8 @@ body {
     background-color: dimgray;
     border-radius: 20px;
     padding: 5px 10px;
-    width: 400px;
-    height: 400px;
+    width: var(--generalBoxWidth);
+    height: var(--generalBoxHeight);
     
     transition: all 0.3s;
 }
@@ -126,8 +131,8 @@ body {
     background-color: dimgray;
     border-radius: 20px;
     padding: 5px 10px;
-    width: 400px;
-    height: 400px;
+    width: var(--generalBoxWidth);
+    height: var(--generalBoxHeight);
     
     transition: all 0.3s;
 }
@@ -141,8 +146,8 @@ body {
     background-color: dimgray;
     border-radius: 20px;
     padding: 5px 10px;
-    width: 400px;
-    height: 400px;
+    width: var(--generalBoxWidth);
+    height: var(--generalBoxHeight);
 
     transition: all 0.3s;
 }
@@ -156,8 +161,8 @@ body {
     background-color: dimgray;
     border-radius: 20px;
     padding: 5px 10px;
-    width: 400px;
-    height: 400px;
+    width: var(--generalBoxWidth);
+    height: var(--generalBoxHeight);
 
     transition: all 0.3s;
 }
@@ -165,4 +170,19 @@ body {
     margin: 20px 75px;
     width: 450px;
     height: 450px;
+}
+
+@media(max-width: 800px) {
+
+    :root {
+        
+    }
+
+    body {
+        font-size: 13px;
+    }
+
+    #member {
+        grid-column-gap: 100px;
+    }
 }
