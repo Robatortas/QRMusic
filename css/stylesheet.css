@@ -15,6 +15,9 @@ body {
     --generalBoxWidth: 400px;
     --generalBoxHeight: 400px;
 
+    --hoverBoxWidth: 450px;
+    --hoverBoxHeight: 450px;
+    
     --boxColumnGap: 20%;
     --boxRowGap: 50px;;
 }
@@ -119,6 +122,7 @@ body {
 
 
 /* displacements */
+/* I don't think this is the most efficient way, but fuck it */
 .one {
     background-color: dimgray;
     border-radius: 20px;
@@ -130,8 +134,8 @@ body {
 }
 .one:hover {
     margin: 20px 75px;
-    width: 450px;
-    height: 450px;
+    width: var(--hoverBoxWidth);
+    height: var(--hoverBoxHeight);
 }
 
 .two {
@@ -145,8 +149,8 @@ body {
 }
 .two:hover {
     margin: 20px 75px;
-    width: 450px;
-    height: 450px;
+    width: var(--hoverBoxWidth);
+    height: var(--hoverBoxHeight);
 }
 
 .three {
@@ -160,8 +164,8 @@ body {
 }
 .three:hover {
     margin: 20px 75px;
-    width: 450px;
-    height: 450px;
+    width: var(--hoverBoxWidth);
+    height: var(--hoverBoxHeight);
 }
 
 .four {
@@ -175,10 +179,12 @@ body {
 }
 .four:hover {
     margin: 20px 75px;
-    width: 450px;
-    height: 450px;
+    width: var(--hoverBoxWidth);
+    height: var(--hoverBoxHeight);
 }
+/* END */
 
+/* Small Settings */
 @media(max-width: 800px) {
 
     body {
@@ -190,5 +196,15 @@ body {
 
     #member {
         grid-column-gap: 100px;
+        margin-left: 20px;
+        grid-column-gap: 10px;
+    }
+
+    #member:hover {
+        --hoverBoxWidth: 340px;
+        --hoverBoxHeight: 340px;
+
+        --boxColumnGap: 20px;
+        --boxRowGap: 20px;
     }
 }
