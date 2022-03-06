@@ -9,7 +9,7 @@ body {
 :root {
     --mainColor: #56B8FF;
     --hoverColor: #0094FF;
-
+    --grayColor: dimgray;
 
     /* Box Variables */
     --generalBoxWidth: 400px;
@@ -19,7 +19,7 @@ body {
     --hoverBoxHeight: 450px;
     
     --boxColumnGap: 20%;
-    --boxRowGap: 50px;;
+    --boxRowGap: 50px;
 }
 
 .generalHeading {
@@ -78,13 +78,37 @@ body {
     border-radius: 20px;
     text-align: center;
     color: #ffffff;
-    background-color: dimgray;
+    background-color: var(--grayColor);
     padding: 10px;
     margin: 20px;
 }
 
 .textBox h1 {
     text-align: center;
+}
+
+
+.imgBox {
+    background: var(--grayColor);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px 50px;
+
+text-align: left;
+
+    /* Font */
+    color: #ffffff;
+    font-size: 20px;
+}
+.imgBox p {
+    text-align: right;
+}
+#img {
+    position: absolute;
+}
+
+#imgBoxText {
+    text-align: right;
 }
 
 .title {
