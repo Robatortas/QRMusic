@@ -110,11 +110,15 @@ body {
 
 .partition {
     background: #fff;
-    text-align: center;
     box-shadow: 0px 1px 10px var(--grayColor);
-
+    text-align: left;
+    
     margin: 30px 0px;
     padding: 10px;
+}
+#partitionText {
+    text-align: center;
+    padding-left: 30%;
 }
 
 
@@ -149,7 +153,7 @@ body {
     padding: 5px 10px;
     width: var(--generalBoxWidth);
     height: var(--generalBoxHeight);
-    
+
     transition: all 0.3s;
 }
 .one:hover {
