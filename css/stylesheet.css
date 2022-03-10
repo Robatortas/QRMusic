@@ -28,15 +28,24 @@ body {
     background-size: cover;
     background-position: bottom;
     background-color: darkorchid;
+
     background-image: url(../res/heading.png);
+    background-size: 100%;
+    filter: blur();
+    -webkit-filter: blur(0px);
+
     color: #fff;
     text-align: left;
+    transition: 1.0s;
 }
 
 .heading {
     overflow: none;
     overflow: hidden;
     text-align: center;
+
+    filter: blur();
+    -webkit-filter: blur(-3px);
 }
 
 .heading img {
@@ -231,4 +240,11 @@ body {
         --boxColumnGap: 20px;
         --boxRowGap: 20px;
     }
+}
+
+html:not([data-scroll='0']) .generalHeading {
+    filter: blur();
+    -webkit-filter: blur(1px);
+    background-size: 110%;
+    transition: 1.0s;
 }
