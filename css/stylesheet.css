@@ -31,13 +31,22 @@ body {
 
     background-image: url(../res/heading.png);
     background-size: 100%;
-    filter: blur();
-    -webkit-filter: blur(0px);
 
     color: #fff;
     text-align: left;
     transition: 1.0s;
 }
+html:not([data-scroll='0']) .generalHeading  {
+    /* filter: blur();
+    -webkit-filter: blur(1px); */
+    background-size: 110%;
+    transition: 1.0s;
+}
+.generalHeading img{
+    padding-left: 10px;
+    transition: 1.0s;
+}
+
 
 .heading {
     overflow: none;
@@ -240,11 +249,4 @@ body {
         --boxColumnGap: 20px;
         --boxRowGap: 20px;
     }
-}
-
-html:not([data-scroll='0']) .generalHeading {
-    filter: blur();
-    -webkit-filter: blur(1px);
-    background-size: 110%;
-    transition: 1.0s;
 }
