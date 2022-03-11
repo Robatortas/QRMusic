@@ -1,13 +1,14 @@
 // I HATE JAVASCRIPT!
 // FUCK IT!
-document.addEventListener("scroll", searchScroll);
 
+// Search
 function searchScroll() {
   let scrollYPos = document.documentElement.scrollTop; //= document.body.scrollTop = 1000;
   // document.body.innerHTML = scrollDemo.scrollTop;
 
   let search = document.querySelector(".search");
 
+  // $ is a shrot way of referencing JQuery!
   if(scrollYPos > 100) {
     console.log("fixed!");
     $(".search").css({
@@ -22,3 +23,5 @@ function searchScroll() {
     });
   }
 }
+document.addEventListener("scroll", searchScroll);
+
