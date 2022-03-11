@@ -1,6 +1,8 @@
 // I HATE JAVASCRIPT!
 // FUCK IT!
-document.addEventListener("scroll", function() {
+document.addEventListener("scroll", searchScroll);
+
+function searchScroll() {
   let scrollYPos = document.documentElement.scrollTop; //= document.body.scrollTop = 1000;
   // document.body.innerHTML = scrollDemo.scrollTop;
 
@@ -11,8 +13,7 @@ document.addEventListener("scroll", function() {
     $(".search").css({
       position: 'fixed',
       margin: '-100px 0px',
-      width: '100%',
-      transition: 'all 0.3s'
+      width: '100%'
     });
   } else {
     $(".search").css({
@@ -20,4 +21,4 @@ document.addEventListener("scroll", function() {
       margin: '0px 0px'
     });
   }
-});
+}

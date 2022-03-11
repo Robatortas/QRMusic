@@ -28,7 +28,7 @@ body {
     background-size: cover;
     background-position: bottom;
     background-color: darkorchid;
-
+    
     background-image: url(../res/heading.png);
     background-size: 100%;
 
@@ -52,7 +52,6 @@ html:not([data-scroll='0']) .generalHeading  {
     overflow: none;
     overflow: hidden;
     text-align: center;
-    box-shadow: -10px 10px 10px var(--grayColor);
 
     filter: blur();
     -webkit-filter: blur(-3px);
