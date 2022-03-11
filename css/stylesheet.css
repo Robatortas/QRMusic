@@ -52,6 +52,7 @@ html:not([data-scroll='0']) .generalHeading  {
     overflow: none;
     overflow: hidden;
     text-align: center;
+    box-shadow: -10px 10px 10px var(--grayColor);
 
     filter: blur();
     -webkit-filter: blur(-3px);
@@ -65,6 +66,7 @@ html:not([data-scroll='0']) .generalHeading  {
 .search {
     background-color: var(--mainColor);
     padding: 10px;
+    position: static;
 }
 
 /* html:not([data-scroll='1']) .search  {
