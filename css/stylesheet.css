@@ -67,6 +67,10 @@ html:not([data-scroll='0']) .generalHeading  {
     padding: 10px;
 }
 
+/* html:not([data-scroll='1']) .search  {
+    position: fixed;
+} */
+
 .search li {
     margin: -3px;
     list-style: none;
