@@ -1,5 +1,6 @@
 # QRMusic
 QRMusic WebServer
+Static version!
 
 
 MADE FOR THE PURPOSE OF THE QRMUSIC COMPANY
