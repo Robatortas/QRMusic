@@ -63,6 +63,7 @@ html:not([data-scroll='0']) .generalHeading  {
 }
 
 .search {
+    margin-top: 0px;
     background-color: var(--mainColor);
     padding: 10px;
     position: static;
@@ -163,7 +164,11 @@ html:not([data-scroll='0']) .generalHeading  {
 
 
 #forms {
-    
+    display: block;
+    margin: 0 auto;
+
+    border-radius: 20px;
+    background-color: var(--grayColor);
 }
 
 
