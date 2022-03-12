@@ -8,7 +8,7 @@ function searchScroll() {
 
   let search = document.querySelector(".search");
 
-  // $ is a shrot way of referencing JQuery!
+  // $ is a short way of referencing JQuery!
   if(scrollYPos > 100) {
     console.log("fixed!");
     $(".search").css({

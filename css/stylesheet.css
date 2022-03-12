@@ -162,6 +162,11 @@ html:not([data-scroll='0']) .generalHeading  {
 }
 
 
+#forms {
+    
+}
+
+
 /* members */
 #member a {
     color: var(--mainColor);
@@ -230,6 +235,21 @@ html:not([data-scroll='0']) .generalHeading  {
     height: var(--hoverBoxHeight);
 }
 /* END */
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px;
+    position: relative;
+    background-color: var(--grayColor);
+    font-size: 25px;
+    color: #fff;
+}
+
+.footerContent {
+    display: inline-block;
+}
+
 
 /* Small Settings */
 @media(max-width: 800px) {
