@@ -114,6 +114,9 @@ html:not([data-scroll='0']) .generalHeading  {
 
 /* Image box */
 .imgBox {
+    display: flex;
+    flex-wrap: wrap;
+    
     background: var(--grayColor);
     border-radius: 20px;
     margin: 10px;
@@ -143,6 +146,20 @@ html:not([data-scroll='0']) .generalHeading  {
 #partitionText {
     text-align: center;
     padding-left: 30%;
+}
+
+.partitionBox {
+    background-color: #ffffff;
+    box-shadow: 0px 1px 10px var(--grayColor);
+    
+    padding: 10px;
+    margin: 20px;
+
+    width: var(--generalBoxWidth);
+    height: var(--generalBoxHeight);
+}
+.partitionBox p {
+    font-size: 25px;
 }
 
 
