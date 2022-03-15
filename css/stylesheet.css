@@ -268,8 +268,54 @@ footer {
     color: #fff;
 }
 
-.footerContent {
-    display: inline-block;
+.footerArea {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    grid: 0%;
+    grid-template-columns: auto;
+}
+.footerContent1 {
+    display: block;
+    padding: 50px;
+    text-align: center;
+    background-color: #000000;
+    margin: 0px, auto;
+    width: min-content;
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+.footerContent2 {
+    display: block;
+
+    text-align: center;
+    background-color: #000000;
+    grid-column: 4 / 4;
+    grid-row: 1 / 3;
+    margin: 1px, auto;
+    padding: 100px;
+    width: min-content;
+
+    
+    list-style: none;
+    text-decoration: none;
+
+    transition: all 2.0s;
+}
+.footerContent2 a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+    transition: all 0.5s;
+}
+.footerContent2 a:hover  {
+    color: #0094FF;
+    list-style: none;
+    text-decoration: none;
+    font-size: 30px;
+    
 }
 
 
