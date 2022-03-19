@@ -300,7 +300,6 @@ footer {
     }
 
     #forms {
-        width: 100vh;
-        min-width: 10%;
+        width: 60vh;
     }
 }
