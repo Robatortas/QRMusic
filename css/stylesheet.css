@@ -186,6 +186,9 @@ html:not([data-scroll='0']) .generalHeading  {
     grid-gap: 10px;
 
     color: var(--grayColor);
+
+    
+    transition: all 1.0s;
 }
 
 #memb1, #memb2, #memb3, #memb4 {
@@ -280,8 +283,7 @@ footer {
     }
 
     .members {
-        grid-column-gap: 100px;
-        margin-left: 20px;
+        grid-template-columns: repeat(1, auto);
         grid-column-gap: 10px;
         font-size: 1.5vw;
     }
