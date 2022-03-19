@@ -298,8 +298,10 @@ footer {
         --boxColumnGap: 20px;
         --boxRowGap: 20px;
     }
+}
 
+@media(min-height: 800px) {
     #forms {
-        width: 60vh;
+        width: 100vh;
     }
 }
