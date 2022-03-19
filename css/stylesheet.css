@@ -167,19 +167,6 @@ html:not([data-scroll='0']) .generalHeading  {
     text-align: center;
 }
 
-#member {
-    margin-left: 100px;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(10px, auto);
-    grid-column-gap: 20%;
-    grid-row-gap: var(--boxRowGap);
-
-    text-align: center;
-}
-
-
 #forms {
     display: block;
     margin: 0 auto;
@@ -188,74 +175,32 @@ html:not([data-scroll='0']) .generalHeading  {
     background-color: var(--grayColor);
 }
 
+.members {
+    display: grid;
 
-/* members */
-#member a {
-    color: var(--mainColor);
+    margin: 20px 0px;
+
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows:2;
+    grid-gap: 10px;
+
+    color: var(--grayColor);
 }
 
+#memb1, #memb2, #memb3, #memb4 {
+    display: block;
+    margin: 0 auto;
 
-/* displacements */
-/* I don't think this is the most efficient way, but fuck it */
-.one {
-    background-color: dimgray;
-    border-radius: 20px;
-    padding: 5px 10px;
+    background: white;
+
+    box-shadow: 1px 1px 10px var(--grayColor);
+
     width: var(--generalBoxWidth);
     height: var(--generalBoxHeight);
 
-    transition: all 0.3s;
-}
-.one:hover {
-    margin: 20px 75px;
-    width: var(--hoverBoxWidth);
-    height: var(--hoverBoxHeight);
+    padding: 20px;
 }
 
-.two {
-    background-color: dimgray;
-    border-radius: 20px;
-    padding: 5px 10px;
-    width: var(--generalBoxWidth);
-    height: var(--generalBoxHeight);
-    
-    transition: all 0.3s;
-}
-.two:hover {
-    margin: 20px 75px;
-    width: var(--hoverBoxWidth);
-    height: var(--hoverBoxHeight);
-}
-
-.three {
-    background-color: dimgray;
-    border-radius: 20px;
-    padding: 5px 10px;
-    width: var(--generalBoxWidth);
-    height: var(--generalBoxHeight);
-
-    transition: all 0.3s;
-}
-.three:hover {
-    margin: 20px 75px;
-    width: var(--hoverBoxWidth);
-    height: var(--hoverBoxHeight);
-}
-
-.four {
-    background-color: dimgray;
-    border-radius: 20px;
-    padding: 5px 10px;
-    width: var(--generalBoxWidth);
-    height: var(--generalBoxHeight);
-
-    transition: all 0.3s;
-}
-.four:hover {
-    margin: 20px 75px;
-    width: var(--hoverBoxWidth);
-    height: var(--hoverBoxHeight);
-}
 /* END */
 
 footer {
@@ -275,6 +220,7 @@ footer {
     grid-auto-rows: minmax(100px, auto);
     grid: 0%;
     grid-template-columns: auto;
+
 }
 .footerContent1 {
     display: block;
