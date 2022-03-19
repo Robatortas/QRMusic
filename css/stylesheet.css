@@ -273,7 +273,7 @@ footer {
 
 
 /* Small Settings */
-@media(max-width: 9000px) {
+@media(max-width: 800px) {
 
     body {
         font-size: 13px;
@@ -285,6 +285,7 @@ footer {
     .members {
         grid-template-columns: repeat(1, auto);
         grid-column-gap: 10px;
+        width: auto;
         font-size: 1.5vw;
     }
 
