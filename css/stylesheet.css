@@ -273,7 +273,7 @@ footer {
 
 
 /* Small Settings */
-@media(max-width: 800px) {
+@media(max-width: 900px) {
 
     body {
         font-size: 13px;
