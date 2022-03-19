@@ -301,5 +301,6 @@ footer {
 
     #forms {
         width: 100vh;
+        min-width: 10%;
     }
 }
