@@ -286,7 +286,7 @@ footer {
         grid-template-columns: repeat(1, auto);
         grid-column-gap: 10px;
         width: auto;
-        font-size: 2.5vw;
+        font-size: 13px;
     }
 
     #member:hover {
