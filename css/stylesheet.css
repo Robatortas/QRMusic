@@ -180,6 +180,7 @@ html:not([data-scroll='0']) .generalHeading  {
 
     margin: 20px 0px;
 
+
     grid-template-columns: repeat(2, auto);
     grid-template-rows:2;
     grid-gap: 10px;
@@ -195,8 +196,9 @@ html:not([data-scroll='0']) .generalHeading  {
 
     box-shadow: 1px 1px 10px var(--grayColor);
 
-    max-width: 50%;
+    min-width: 0%;
     max-height: 100%;
+
     width: var(--generalBoxWidth);
     height: var(--generalBoxHeight);
 
@@ -277,10 +279,11 @@ footer {
         --generalBoxHeight: 300px;
     }
 
-    #member {
+    .members {
         grid-column-gap: 100px;
         margin-left: 20px;
         grid-column-gap: 10px;
+        font-size: 1.5vw;
     }
 
     #member:hover {
