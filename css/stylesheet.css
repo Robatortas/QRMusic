@@ -182,7 +182,6 @@ html:not([data-scroll='0']) .generalHeading  {
 
     margin: 20px 0px;
 
-
     grid-template-columns: repeat(2, auto);
     grid-template-rows:2;
     grid-gap: 10px;
@@ -300,9 +299,8 @@ footer {
     }
 
     #forms {
-        width: 100vh;
         min-width: none;
-    }
+    } 
 }
 
 @media(min-width: 800px) {
