@@ -171,8 +171,6 @@ html:not([data-scroll='0']) .generalHeading  {
     display: block;
     margin: 0 auto;
 
-    width: 70%;
-
     border-radius: 20px;
     background-color: var(--grayColor);
     
@@ -301,10 +299,6 @@ footer {
     }
 
     #forms {
-        min-width: none;
-    } 
-}
-
-@media(min-width: 800px) {
-    
+        width: 90%;   
+    }
 }
