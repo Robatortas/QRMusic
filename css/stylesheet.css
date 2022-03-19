@@ -195,8 +195,8 @@ html:not([data-scroll='0']) .generalHeading  {
 
     box-shadow: 1px 1px 10px var(--grayColor);
 
-    width: var(--generalBoxWidth);
-    height: var(--generalBoxHeight);
+    width: auto;
+    height: auto;
 
     padding: 20px;
 }
