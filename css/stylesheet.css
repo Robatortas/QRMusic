@@ -173,6 +173,8 @@ html:not([data-scroll='0']) .generalHeading  {
 
     border-radius: 20px;
     background-color: var(--grayColor);
+    
+    transition: all 1.0s;
 }
 
 .members {
@@ -295,5 +297,9 @@ footer {
 
         --boxColumnGap: 20px;
         --boxRowGap: 20px;
+    }
+
+    #forms {
+        width: 70vw;
     }
 }
