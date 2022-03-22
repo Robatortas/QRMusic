@@ -172,8 +172,14 @@ html:not([data-scroll='0']) .generalHeading  {
     margin: 0 auto;
 
     border-radius: 20px;
-    background-color: var(--grayColor);
+
+
+    /* background-color: var(--grayColor); */
     
+background-image: url(../res/heading.png);
+
+    box-shadow: 1px 1px 10px var(--grayColor);
+
     transition: all 1.0s;
 }
 
