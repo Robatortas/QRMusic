@@ -160,19 +160,18 @@ html:not([data-scroll='0']) .generalHeading  {
     grid-gap: 10px;
 
     color: var(--grayColor);
-
-    transition: all 1.0s;
 }
 #partitionText {
     padding: 20px;
     text-align: center; /* HMMMMMMMMMM IM THINKING! THINK FUCKING HELL!!!! */
     position: relative;
-
+    transition: all 1.0s;
 }
 #partitionImage {
    position: relative;
-   margin: 0 auto;
-   width: 80%;
+   margin: auto auto;
+   width: 100%;
+   transition: all 1.0s;
 }
 
 .partitionBox {
@@ -329,12 +328,6 @@ footer {
 
         --boxColumnGap: 20px;
         --boxRowGap: 20px;
-    }
-
-    .partitionContents {
-        grid-template-columns: repeat(1, auto);
-        transform: translateX(0px);
-        font-size: 9px;
     }
 
     #forms {
