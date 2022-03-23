@@ -143,28 +143,34 @@ html:not([data-scroll='0']) .generalHeading  {
     text-align: left;
 
     min-width: 0%;
+    max-width: 2000px;
     max-height: 100%;
 
-    margin: 50px 100px;
+    width: 80%;
+
+    margin: auto auto;
 }
 .partitionContents {
     display: grid;
 
-    /* I DIDNT EVEN KNEW THIS EXISTED, HOLY SHIT!!! */
-    /* transform: translateX(30%); */
+    margin: 20px 0px;
 
-    grid-template-columns: repeat(2, 1.3fr);
-    grid-auto-rows: minmax(10px, auto);
-    grid-row-gap: var(--boxRowGap);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 2;
+    grid-gap: 10px;
+
+    color: var(--grayColor);
+    
+    transition: all 1.0s;
 }
 #partitionText {
     padding: 20px;
     text-align: center; /* HMMMMMMMMMM IM THINKING! THINK FUCKING HELL!!!! */
+    position: relative;
+
 }
 #partitionImage {
-    display: block;
-    text-align: center; /* HMMMMMMMMMM IM THINKING! THINK FUCKING HELL!!!! */
-    margin: 0 auto;
+   
 }
 
 .partitionBox {
