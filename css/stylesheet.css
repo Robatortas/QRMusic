@@ -151,9 +151,9 @@ html:not([data-scroll='0']) .generalHeading  {
     display: grid;
 
     /* I DIDNT EVEN KNEW THIS EXISTED, HOLY SHIT!!! */
-    transform: translateX(30%);
+    /* transform: translateX(30%); */
 
-    grid-template-columns: repeat(2, 0.3fr);
+    grid-template-columns: repeat(2, 1.3fr);
     grid-auto-rows: minmax(10px, auto);
     grid-row-gap: var(--boxRowGap);
 }
