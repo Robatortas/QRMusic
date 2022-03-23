@@ -149,15 +149,19 @@ html:not([data-scroll='0']) .generalHeading  {
 }
 .partitionContents {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+
+    /* I DIDNT EVEN KNEW THIS EXISTED, HOLY SHIT!!! */
+    transform: translateX(30%);
+
+    grid-template-columns: repeat(2, 0.3fr);
     grid-auto-rows: minmax(10px, auto);
     grid-row-gap: var(--boxRowGap);
 }
 #partitionText {
+    padding: 20px;
     text-align: center; /* HMMMMMMMMMM IM THINKING! THINK FUCKING HELL!!!! */
 }
 #partitionImage {
-    
     display: block;
     text-align: center; /* HMMMMMMMMMM IM THINKING! THINK FUCKING HELL!!!! */
     margin: 0 auto;
@@ -321,7 +325,8 @@ footer {
 
     .partitionContents {
         grid-template-columns: repeat(1, auto);
-        padding: 0;
+        transform: translateX(0px);
+        font-size: 9px;
     }
 
     #forms {
