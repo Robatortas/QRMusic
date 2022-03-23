@@ -160,7 +160,7 @@ html:not([data-scroll='0']) .generalHeading  {
     grid-gap: 10px;
 
     color: var(--grayColor);
-    
+
     transition: all 1.0s;
 }
 #partitionText {
@@ -170,7 +170,9 @@ html:not([data-scroll='0']) .generalHeading  {
 
 }
 #partitionImage {
-   
+   position: relative;
+   margin: 0 auto;
+   width: 80%;
 }
 
 .partitionBox {
