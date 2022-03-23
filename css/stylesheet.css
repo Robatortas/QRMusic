@@ -136,11 +136,7 @@ html:not([data-scroll='0']) .generalHeading  {
 }
 
 .partition {
-    display: grid;
-
-    grid-template-columns: repeat(2, 2fr);
-    grid-auto-rows: minmax(10px, auto);
-    grid-row-gap: var(--boxRowGap);
+    display: block;
 
     background: #fff;
     box-shadow: 0px 1px 10px var(--grayColor);
@@ -148,11 +144,17 @@ html:not([data-scroll='0']) .generalHeading  {
 
     margin: 50px 100px;
 }
+.partitionContents {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: minmax(10px, auto);
+    grid-row-gap: var(--boxRowGap);
+}
 #partitionText {
-    text-align: center; /* HMMMMMMMMMM IM THINKING! */
+    text-align: center; /* HMMMMMMMMMM IM THINKING! THINK FUCKING HELL!!!! */
 }
 #partitionImage {
-    
+    display: grid;
 }
 
 .partitionBox {
@@ -174,95 +176,54 @@ html:not([data-scroll='0']) .generalHeading  {
     text-align: center;
 }
 
-#member {
-    margin-left: 100px;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(10px, auto);
-    grid-column-gap: 20%;
-    grid-row-gap: var(--boxRowGap);
-
-    text-align: center;
-}
-
-
 #forms {
     display: block;
     margin: 0 auto;
 
     border-radius: 20px;
-    background-color: var(--grayColor);
-}
 
 
-/* members */
-#member a {
-    color: var(--mainColor);
-}
-
-
-/* displacements */
-/* I don't think this is the most efficient way, but fuck it */
-.one {
-    background-color: dimgray;
-    border-radius: 20px;
-    padding: 5px 10px;
-    width: var(--generalBoxWidth);
-    height: var(--generalBoxHeight);
-
-    transition: all 0.3s;
-}
-.one:hover {
-    margin: 20px 75px;
-    width: var(--hoverBoxWidth);
-    height: var(--hoverBoxHeight);
-}
-
-.two {
-    background-color: dimgray;
-    border-radius: 20px;
-    padding: 5px 10px;
-    width: var(--generalBoxWidth);
-    height: var(--generalBoxHeight);
+    /* background-color: var(--grayColor); */
     
-    transition: all 0.3s;
-}
-.two:hover {
-    margin: 20px 75px;
-    width: var(--hoverBoxWidth);
-    height: var(--hoverBoxHeight);
+background-image: url(../res/heading.png);
+
+    box-shadow: 1px 1px 10px var(--grayColor);
+
+    transition: all 1.0s;
 }
 
-.three {
-    background-color: dimgray;
-    border-radius: 20px;
-    padding: 5px 10px;
+.members {
+    display: grid;
+
+    margin: 20px 0px;
+
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows:2;
+    grid-gap: 10px;
+
+    color: var(--grayColor);
+
+    
+    transition: all 1.0s;
+}
+
+#memb1, #memb2, #memb3, #memb4 {
+    display: block;
+    margin: 0 auto;
+
+    background: white;
+
+    box-shadow: 1px 1px 10px var(--grayColor);
+
+    min-width: 0%;
+    max-height: 100%;
+
     width: var(--generalBoxWidth);
     height: var(--generalBoxHeight);
 
-    transition: all 0.3s;
-}
-.three:hover {
-    margin: 20px 75px;
-    width: var(--hoverBoxWidth);
-    height: var(--hoverBoxHeight);
+    padding: 20px;
 }
 
-.four {
-    background-color: dimgray;
-    border-radius: 20px;
-    padding: 5px 10px;
-    width: var(--generalBoxWidth);
-    height: var(--generalBoxHeight);
-
-    transition: all 0.3s;
-}
-.four:hover {
-    margin: 20px 75px;
-    width: var(--hoverBoxWidth);
-    height: var(--hoverBoxHeight);
-}
 /* END */
 
 footer {
@@ -275,8 +236,55 @@ footer {
     color: #fff;
 }
 
-.footerContent {
-    display: inline-block;
+.footerArea {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    grid: 0%;
+    grid-template-columns: auto;
+
+}
+.footerContent1 {
+    display: block;
+    padding: 50px;
+    text-align: center;
+    background-color: #000000;
+    margin: 0px, auto;
+    width: min-content;
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+.footerContent2 {
+    display: block;
+
+    text-align: center;
+    background-color: #000000;
+    grid-column: 4 / 4;
+    grid-row: 1 / 3;
+    margin: 1px, auto;
+    padding: 100px;
+    width: min-content;
+
+    
+    list-style: none;
+    text-decoration: none;
+
+    transition: all 2.0s;
+}
+.footerContent2 a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+    transition: all 0.5s;
+}
+.footerContent2 a:hover  {
+    color: #0094FF;
+    list-style: none;
+    text-decoration: none;
+    font-size: 30px;
+    
 }
 
 
@@ -290,10 +298,11 @@ footer {
         --generalBoxHeight: 300px;
     }
 
-    #member {
-        grid-column-gap: 100px;
-        margin-left: 20px;
+    .members {
+        grid-template-columns: repeat(1, auto);
         grid-column-gap: 10px;
+        width: auto;
+        font-size: 13px;
     }
 
     #member:hover {
@@ -302,5 +311,9 @@ footer {
 
         --boxColumnGap: 20px;
         --boxRowGap: 20px;
+    }
+
+    #forms {
+        width: 70vw;
     }
 }
