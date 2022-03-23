@@ -136,16 +136,23 @@ html:not([data-scroll='0']) .generalHeading  {
 }
 
 .partition {
+    display: grid;
+
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: minmax(10px, auto);
+    grid-row-gap: var(--boxRowGap);
+
     background: #fff;
     box-shadow: 0px 1px 10px var(--grayColor);
     text-align: left;
-    
-    margin: 30px 0px;
-    padding: 10px;
+
+    margin: 50px 100px;
 }
 #partitionText {
-    text-align: center;
-    padding-left: 30%;
+    text-align: center; /* HMMMMMMMMMM IM THINKING! */
+}
+#partitionImage {
+    
 }
 
 .partitionBox {
