@@ -142,6 +142,9 @@ html:not([data-scroll='0']) .generalHeading  {
     box-shadow: 0px 1px 10px var(--grayColor);
     text-align: left;
 
+    min-width: 0%;
+    max-height: 100%;
+
     margin: 50px 100px;
 }
 .partitionContents {
@@ -154,7 +157,10 @@ html:not([data-scroll='0']) .generalHeading  {
     text-align: center; /* HMMMMMMMMMM IM THINKING! THINK FUCKING HELL!!!! */
 }
 #partitionImage {
-    display: grid;
+    
+    display: block;
+    text-align: center; /* HMMMMMMMMMM IM THINKING! THINK FUCKING HELL!!!! */
+    margin: 0 auto;
 }
 
 .partitionBox {
@@ -185,7 +191,7 @@ html:not([data-scroll='0']) .generalHeading  {
 
     /* background-color: var(--grayColor); */
     
-background-image: url(../res/heading.png);
+    background-image: url(../res/heading.png);
 
     box-shadow: 1px 1px 10px var(--grayColor);
 
@@ -311,6 +317,11 @@ footer {
 
         --boxColumnGap: 20px;
         --boxRowGap: 20px;
+    }
+
+    .partitionContents {
+        grid-template-columns: repeat(1, auto);
+        padding: 0;
     }
 
     #forms {
