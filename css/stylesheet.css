@@ -142,7 +142,7 @@ html:not([data-scroll='0']) .generalHeading  {
     box-shadow: 0px 1px 10px var(--grayColor);
     text-align: left;
 
-    min-width: 0%;
+    min-width: 500px;
     max-width: 2000px;
     max-height: 100%;
 
@@ -171,7 +171,6 @@ html:not([data-scroll='0']) .generalHeading  {
 #partitionImage {
    position: relative;
    margin: auto auto;
-   width: 60%;
    transition: all 1.0s;
 }
 
@@ -334,9 +333,7 @@ footer {
     .partitionContents {
         font-size: 13px;
     }
-    #partitionImage {
-        width: 80%;
-    }
+    
 
     #forms {
         width: 70vw;
