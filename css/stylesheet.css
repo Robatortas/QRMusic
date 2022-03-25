@@ -171,6 +171,7 @@ html:not([data-scroll='0']) .generalHeading  {
 #partitionImage {
    position: relative;
    margin: auto auto;
+   width: 100%;
    transition: all 1.0s;
 }
 
