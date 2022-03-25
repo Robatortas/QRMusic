@@ -163,6 +163,7 @@ html:not([data-scroll='0']) .generalHeading  {
 }
 #partitionText {
     padding: 20px;
+    margin: 0 auto;
     text-align: center; /* HMMMMMMMMMM IM THINKING! THINK FUCKING HELL!!!! */
     position: relative;
     transition: all 1.0s;
@@ -170,7 +171,7 @@ html:not([data-scroll='0']) .generalHeading  {
 #partitionImage {
    position: relative;
    margin: auto auto;
-   width: 100%;
+   width: 60%;
    transition: all 1.0s;
 }
 
@@ -328,6 +329,13 @@ footer {
 
         --boxColumnGap: 20px;
         --boxRowGap: 20px;
+    }
+
+    .partitionContents {
+        font-size: 13px;
+    }
+    #partitionImage {
+        width: 80%;
     }
 
     #forms {
