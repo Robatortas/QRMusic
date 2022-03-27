@@ -2,8 +2,9 @@ body {
     background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-    margin: 0;
-    padding: 0;    
+    margin: auto;
+    padding: 0;
+    max-width: 1000px;
 }
 
 :root {
@@ -143,7 +144,7 @@ html:not([data-scroll='0']) .generalHeading  {
     text-align: left;
 
     min-width: 0%;
-    max-width: 2000px;
+    max-width: 1000px;
     max-height: 100%;
 
     width: 80%;
@@ -170,8 +171,7 @@ html:not([data-scroll='0']) .generalHeading  {
 }
 #partitionImage {
    position: relative;
-   margin: auto auto;
-   width: 100%;
+   margin: auto;
    transition: all 1.0s;
 }
 
@@ -331,6 +331,9 @@ footer {
         --boxRowGap: 20px;
     }
 
+    .partitionImage {
+        display: ;
+    }
     .partitionContents {
         font-size: 13px;
     }
