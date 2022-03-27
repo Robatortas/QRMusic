@@ -4,7 +4,7 @@ body {
 
     margin: auto;
     padding: 0;
-    max-width: 1000px;
+    max-width: 1500px;
 }
 
 :root {
@@ -171,6 +171,7 @@ html:not([data-scroll='0']) .generalHeading  {
 }
 #partitionImage {
    position: relative;
+   text-align: center;
    margin: auto;
    transition: all 1.0s;
 }
@@ -331,11 +332,11 @@ footer {
         --boxRowGap: 20px;
     }
 
-    .partitionImage {
-        display: ;
-    }
     .partitionContents {
         font-size: 13px;
+        grid-template-columns: repeat(1, auto);
+        padding: 0;
+        transition: all 1.0s;
     }
     
 
