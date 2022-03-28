@@ -127,7 +127,7 @@ html:not([data-scroll='0']) .generalHeading  {
 }
 #partitionImage {
    text-align: center;
-   margin: auto;
+   margin: auto auto;
    transition: all 1.0s;
 }
 
@@ -197,7 +197,7 @@ footer {
 .footerArea {
     display: grid;
 
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
     grid-template-rows: 1;
 
     padding: 20px;
@@ -210,7 +210,7 @@ footer {
     margin: auto;
     transition: all 1.0s;
     display: block;
-    width: min-content;
+    width: fit-content;
     height: min-content;
 
     list-style: none;
