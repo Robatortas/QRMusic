@@ -26,16 +26,17 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
-        <!-- Adds JQuery -->
-        <script src="js//jquery.min.js"></script>
-        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/stylesheet.css">
 
         <title>QRMusic</title>
+
+        <!-- Adds JQuery -->
+    <script src="js//jquery.min.js"></script>
+    
+    <script src="js/script.js"></script>
     </head>
 
     <body>
@@ -54,7 +55,7 @@
 
         <div class="partition" >
             <div class="partitionContents">
-                <div id="partitionText" >
+                <div class="partitionText" >
                     <h1>QRMusic</h1>
 
                     <p>
@@ -80,6 +81,23 @@
             </div>
         </div>
 
+        <div class="partition">
+            <div class="partitionContents"><img id="partitionImage" src="res/sampleImage.png" alt="bracelet" style="padding: 20px">
+                <div class="partitionText">
+                    <h1>The Design</h1>
+                    <p>
+                        The design is simple, yet attractive.
+                        <br>
+                        We decided to go for a simple handmade product that is easy to make, and affordable for our clients
+                        <br>
+                        <br>
+                        It comes with a simple string attached to a metal plate with the <b><u>Spotify&copy;</u></b> QR Code of your choice,
+                        and we apply a small coat of enamel to the plate, giving it a premium feel.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     
     <footer>
         <div class="footerArea">
@@ -93,7 +111,7 @@
             </div>
 
             <p class="copyRight">QRMusic 2022 &copy;</p>
-
+            
             <div class="footerContent2">
                 <p >
                     Index:

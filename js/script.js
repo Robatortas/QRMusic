@@ -10,16 +10,18 @@ function searchScroll() {
 
   // $ is a short way of referencing JQuery!
   if(scrollYPos > 100) {
-    console.log("fixed!");
+  // IT'S FIXED NOW!
     $(".search").css({
       position: 'fixed',
       margin: '-100px 0px',
-      width: '100%'
+      width: '100vw'
     });
   } else {
+    // Not fixed :(
     $(".search").css({
+      margin: '0px',
       position: 'relative',
-      margin: '0px 0px'
+      width: 'auto'
     });
   }
 }
