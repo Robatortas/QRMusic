@@ -188,9 +188,10 @@ html:not([data-scroll='0']) .generalHeading  {
 
 footer {
     margin-top: 100px;
-    background-color: var(--grayColor);
+    background-color: #DADADA;
     font-size: 25px;
-    color: #fff;
+    color: var(--grayColor);
+    box-shadow: 1px 1px 10px var(--grayColor);
 }
 
 .footerArea {
@@ -220,7 +221,7 @@ footer {
 .footerContent2 a {
     list-style: none;
     text-decoration: none;
-    color: white;
+    color: var(--grayColor);
     
     transition: all 0.5s;
 }
