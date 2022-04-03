@@ -71,11 +71,17 @@ html:not([data-scroll='0']) .generalHeading  {
 }
 
 .search li {
+    display: inline;
     margin: -3px;
     list-style: none;
     padding: 10px;
-    display: inline;
     transition: all 0.3s;
+}
+
+.search p {
+    display: inline;
+    text-decoration: underline;
+    color: red;
 }
 
 .search a {
