@@ -78,12 +78,6 @@ html:not([data-scroll='0']) .generalHeading  {
     transition: all 0.3s;
 }
 
-.search p {
-    display: inline;
-    text-decoration: underline;
-    color: red;
-}
-
 .search a {
     padding: 10px;
     padding-left: 10px;
